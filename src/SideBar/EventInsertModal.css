@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+/* 팝업 스타일 */
+.modal {
+    width: 550px;
+    /* height: 250px; */
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    z-index: 2;
+}
+
+.modal-backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+}
+
+/* Swal 모달 폰트  */
+.swal2-html-container,
+.swal2-styled.swal2-confirm {
+    font-family: 'omyu_pretty';
+}
+
+/* 모달 전체  */
+.modal .modalContent {
+    width: 550px;
+    /* height: 250px; */
+    padding: 40px 60px;
+}
+
+.modal .modalContent input {
+    border: none;
+    font-family: 'omyu_pretty';
+    font-size: 17px;
+}
+
+/* 모달 close */
+.modal .close {
+    float: right;
+    margin: 20px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+/* 이벤트 이름 box  */
+.modal .modalContent .eventNameBox {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.modal .modalContent .eventName {
+    margin: 0px;
+    margin-left: 40px;
+    width: 85%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#eventName:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #0096EB;
+}
+
+.modal .modalContent input::placeholder {
+    color: #A7A7A7;
+    font-size: 16px;
+}
+
+/* 컬러 선택 동그라미 */
+.colorBox {
+    position: absolute;
+    top: 2px;
+    font-size: 22px;
+}
+
+.Circle {
+    cursor: pointer;
+}
+
+/* 컬러피커박스 */
+.twitter-picker {
+    width: 540px !important;
+    display: inline-block;
+    padding: 5px;
+    background: rgb(255, 255, 255);
+    border: 0px solid rgba(0, 0, 0, 0.25) !important;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 8px 3px !important;
+    border-radius: 4px;
+    position: absolute;
+    left: -10px;
+}
+
+/* 달력 */
+.modal .modalContent .DatetimeBox {
+    font-size: 18px;
+    width: 110%;
+    height: 50px;
+    line-height: 50px;
+}
+
+.Datetime {
+    display: inline-block;
+    height: 100%;
+}
+
+.Datetime .cn {
+    padding-right: 5px;
+    font-weight: bold;
+    color: #0096EB;
+}
+
+#eventStartDate,
+#eventEndDate {
+    padding: 3px;
+    vertical-align: top;
+    height: 50px;
+    border-bottom: 3px solid transparent;
+}
+
+#eventStartDate:focus,
+#eventEndDate:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #0096EB;
+}
+
+.modal .modalContent .DatetimeBox .dateImg {
+    float: left;
+    vertical-align: middle;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.modal input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    float: left;
+    background: no-repeat;
+    background-image: url("expand_more_FILL0_wght400_GRAD0_opsz48.png");
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.modal input[type="datetime-local"]::-webkit-calendar-picker-indicator:hover {
+    background-color: #D7F1FA;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* 하루종일 box */
+.form-check-label {
+    vertical-align: middle;
+}
+
+.allDayName {
+    height: 50px;
+    /* background-color: rgb(49, 41, 41); */
+}
+
+.modal .modalContent .allDay {
+    font-family: 'omyu_pretty';
+    height: 50px;
+    line-height: 50px;
+    font-size: 17px;
+}
+
+.modal .modalContent .allDay .allDayImg {
+    float: left;
+    font-size: 22px;
+    margin-right: 18px;
+}
+.modal .modalContent .allDay .allDayImg svg {
+    vertical-align: middle;
+}
+.form-check-input {
+    vertical-align: middle;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+/* 일정 추가 */
+.modal .submitButton {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.modal .udbutton {
+    /* display: inline-block; */
+    /* border: 1px solid red; */
+    width: 300px;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.modal #okbutton, .modal #debutton {
+    padding: 5px 0px;
+    width: 120px;
+    margin: 0px 15px;
+    font-family: 'omyu_pretty';
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.modal #okbutton {
+    background-color: #0096EB;
+    border: 2px solid #0096EB;
+    color: white;
+} 
+.modal #okbutton:hover, .modal #debutton:hover{
+    box-shadow: 0px 0px 5px 2px #0096EB;
+}
+.modal #debutton { 
+    background-color: white;
+    border: 2px solid #0096EB;
+    color: #0096EB;
+}
+.modal #debutton:hover {
+    background-color: #dff3ff;
+    color: #0096EB;
+}
+
+/* 
+.modal #debutton {
+    display: inline-block;
+    border-radius: 50px;
+    border: 3px solid #0096EB;
+    background-color: white;
+    font-family: 'omyu_pretty';
+    color: #0096EB;
+    font-size: 17px;
+    width: 120px;
+    padding: 5px 0px;
+    height: 30px;
+    cursor: pointer;
+} */

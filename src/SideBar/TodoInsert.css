@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { box-sizing: border-box; }
+
+/* Todo 입력 */
+.TodoInsert{
+    height: 100%;
+    width: 100%;
+}
+
+
+.TodoInsert input {
+    height: 100%;
+    width: 80%;
+    vertical-align: middle;
+    margin-left: 30px;
+    display: inline-block;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.125rem;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    color: black;
+    flex: 1;
+}
+
+.TodoInsert input::placeholder {
+    color: #a8dfff;
+    font-family: 'omyu_pretty';
+}
+
+/* Todo 버튼 */
+.todosubmit {
+    display: inline;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #0096EB;
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    cursor: pointer;
+    transition: all .5s ease-in;
+}
+.todosubmitBtn{
+    height: 28px;
+    width: 28px;
+    vertical-align: middle;
+}
+
+.todosubmitBtn:hover {
+    color: rgb(255, 184, 184);
+}

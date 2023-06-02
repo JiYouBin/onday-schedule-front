@@ -1,0 +1,186 @@
+/* 투두 타이틀 */
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.Side {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, .3);
+    float: left;
+    width: calc(25% - 100px);
+    height: calc(100% - 80px);
+    margin: 40px 50px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Event Box */
+.Event {
+    height: 50%;
+    padding-bottom: 20px;
+}
+
+.Todo {
+    height: 50%;
+}
+
+/* Event 타이틀 */
+.Event-title {
+    font-family: 'omyu_pretty';
+    background-color: #0096EB;
+    color: white;
+    height: 10%;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.EventTitleName {
+    line-height: 25px;
+    width: 90%;
+    font-size: 25px;
+    font-weight: bold;
+    justify-content: center;
+    display: inline;
+    text-align: center;
+}
+
+.Event-title .plus {
+    font-family: 'omyu_pretty';
+    display: flex;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* Event 리스트 */
+.EventList {
+    border: 3px solid #0096EB;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    height: calc(90% - 40px);
+    overflow-y: scroll;
+    outline: none;
+    padding: 10px;
+}
+
+/* 스크롤 css */
+.EventList::-webkit-scrollbar {
+    width: 8px;
+}
+
+.EventList::-webkit-scrollbar-thumb {
+    background-color: #a8dfff;
+    border-radius: 20px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+.EventList::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.EventItem {
+    font-family: 'omyu_pretty';
+    padding: 10px 0px;
+    border-bottom: 3px dashed #0096EB;
+}
+
+/*  죄성해여 여기에여♥ */
+.detail {
+    cursor: pointer;
+}
+
+.eventName {
+    font-family: 'omyu_pretty';
+    text-align: left;
+    padding-left: 5px;
+    margin-bottom: 2px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.date {
+    text-align: left;
+    padding-left: 5px;
+    align-items: center;
+    font-size: 18px;
+    color: gray;
+    cursor: default;
+}
+
+.EventItem button {
+    outline: none;
+    border: none;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+/* Todo Box */
+.todo-title {
+    background-color: #0096EB;
+    color: white;
+    height: 10%;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'omyu_pretty';
+    font-weight: 600;
+}
+
+.todoInsert {
+    background-color: white;
+    border: 2px solid #0096EB;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.todoList {
+    display: block;
+    width: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 75%;
+    overflow-y: scroll;
+}
+
+/* 스크롤 css */
+.todoList::-webkit-scrollbar {
+    width: 15px;
+}
+
+.todoList::-webkit-scrollbar-thumb {
+    background-color: #a8dfff;
+    border-radius: 20px;
+    background-clip: padding-box;
+    border: 5px solid transparent;
+}
+
+.todoList::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 20px;
+}

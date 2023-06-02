@@ -1,0 +1,9 @@
+#onday-container {
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(226, 238, 253);
+  background-image: url(./onday2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
